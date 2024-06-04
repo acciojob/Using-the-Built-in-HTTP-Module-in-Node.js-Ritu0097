@@ -21,11 +21,9 @@ beforeAll((done) => {
         return done(error);
       }
     });
- 
-    // Give the server a moment to start
     setTimeout(done, 1000); // Wait 1 second for the server to start
   });
-}, 15000); // Extended timeout for starting the server
+}, 15000);
  
 afterAll(() => {
   if (serverProcess) {
