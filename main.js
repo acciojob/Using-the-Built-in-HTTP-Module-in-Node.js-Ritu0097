@@ -14,7 +14,6 @@ function readFile(filePath, response) {
 }
 const server = http.createServer((req, res) => {
     const filePath = './output.txt'; 
-
     readFile(filePath, res);
 });
 server.listen(3000, () => {
